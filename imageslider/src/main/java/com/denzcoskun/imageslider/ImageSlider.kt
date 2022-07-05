@@ -128,6 +128,7 @@ class ImageSlider @JvmOverloads constructor(
             textAlign
         )
         viewPager!!.adapter = viewPagerAdapter
+        viewPager!!.adapter?.notifyDataSetChanged();
         imageCount = imageList.size
         if (imageList.isNotEmpty()) {
             setupDots(imageList.size)
@@ -156,6 +157,7 @@ class ImageSlider @JvmOverloads constructor(
             textAlign
         )
         viewPager!!.adapter = viewPagerAdapter
+        viewPager!!.adapter?.notifyDataSetChanged();
         imageCount = imageList.size
         if (imageList.isNotEmpty()) {
             setupDots(imageList.size)
